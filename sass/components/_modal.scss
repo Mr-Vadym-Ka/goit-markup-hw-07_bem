@@ -54,7 +54,7 @@
     }
 }
 
-.modal-window__close {
+.modal-window__close-icon {
     fill: currentColor;
 }
 .modal-window__input-icon {
@@ -77,9 +77,11 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-    &:focus {
+    &:focus,
+    &:hover {
         border-color: var(--accent-color);
     }
+    &:hover + .modal-window__line-icon,
     &:focus + .modal-window__line-icon {
         fill: var(--accent-color);
     }
@@ -173,7 +175,8 @@
     border-radius: 4px;
     resize: none;
     outline: none;
-    &:focus {
+    &:focus,
+    &:hover {
         border-color: var(--accent-color);
     }
 }

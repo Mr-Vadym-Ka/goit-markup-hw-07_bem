@@ -35,7 +35,7 @@ body {
   list-style: none;
 }
 
-.logo, .header__logo-first {
+.header__logo-first, .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -43,7 +43,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.modal-window__close-button, .modal-window__check-box, .modal-window__check-box span, .member__social-link, .features-item-icon, .work-pics__overlay-text, .clients__item_link {
+.modal-window__close-button, .modal-window__check-box, .modal-window__check-box span, .member__social-link, .features-list__icon, .work-pics__overlay-text, .clients__item_link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +150,7 @@ body {
   outline: none;
 }
 
-.modal-window__close {
+.modal-window__close-icon {
   fill: currentColor;
 }
 
@@ -177,10 +177,11 @@ body {
   padding-left: 42px;
 }
 
-.modal-window__input:focus {
+.modal-window__input:focus, .modal-window__input:hover {
   border-color: var(--accent-color);
 }
 
+.modal-window__input:hover + .modal-window__line-icon,
 .modal-window__input:focus + .modal-window__line-icon {
   fill: var(--accent-color);
 }
@@ -274,7 +275,7 @@ body {
   outline: none;
 }
 
-.modal-window__comment:focus {
+.modal-window__comment:focus, .modal-window__comment:hover {
   border-color: var(--accent-color);
 }
 
@@ -391,13 +392,13 @@ body {
   fill: var(--hero-btntxt-color);
 }
 
+.header__logo-first {
+  color: #2196f3;
+}
+
 .logo {
   color: #000000;
   text-decoration: none;
-}
-
-.header__logo-first {
-  color: #2196f3;
 }
 
 .button {
@@ -590,27 +591,22 @@ body {
   flex-wrap: wrap;
 }
 
-.features-icon {
-  width: 70px;
-  height: 70px;
+.features-list .features-list__item {
+  width: 270px;
 }
 
-.features-item-icon {
+.features-list__icon {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
 
-.features-item + .features-item {
+.features-list__item + .features-list__item {
   margin-left: 30px;
 }
 
-.features-list .features-item {
-  width: 270px;
-}
-
-.features-list-name {
+.features-list__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -620,7 +616,7 @@ body {
   margin-bottom: 10px;
 }
 
-.features-list-text {
+.features-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

@@ -77,6 +77,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
+    transition-duration: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus,
     &:hover {
         border-color: var(--accent-color);
@@ -106,6 +110,9 @@
     transform: translateY(-50%);
     fill: var(--img-title-color);
     color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus {
         fill: currentColor;
@@ -128,6 +135,9 @@
         border-radius: 3px;
         @extend %centering;
         margin-right: 5px;
+        transition-duration: 250ms;
+        transition-property: border-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:focus,
@@ -175,6 +185,10 @@
     border-radius: 4px;
     resize: none;
     outline: none;
+    transition-duration: 250ms;
+    transition-property: border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus,
     &:hover {
         border-color: var(--accent-color);
